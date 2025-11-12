@@ -11,4 +11,5 @@ return {
   'tpope/vim-sexp-mappings-for-regular-people',
   'tpope/vim-repeat',
   'tpope/vim-surround',
+  'tpope/vim-fireplace',
 }
