@@ -738,6 +738,7 @@ require('lazy').setup({
         lua = { 'stylua' },
         purescript = { 'purs-tidy' },
         haskell = { 'ormolu' },
+        ['*'] = { 'trim_whitespace' },
         -- Conform can also run multiple formatters sequentially
         -- python = { "isort", "black" },
         --
