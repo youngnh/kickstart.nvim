@@ -13,4 +13,5 @@ return {
   'tpope/vim-surround',
   'tpope/vim-salve',
   'tpope/vim-fireplace',
+  'vim-test/vim-test',
 }
