@@ -647,6 +647,7 @@ require('lazy').setup({
         -- ts_ls = {},
         --
 
+        clojure_lsp = {},
         gopls = {},
         lua_ls = {
           -- cmd = { ... },
@@ -681,6 +682,7 @@ require('lazy').setup({
       -- for you, so that they are available from within Neovim.
       local ensure_installed = vim.tbl_keys(servers or {})
       vim.list_extend(ensure_installed, {
+        'joker', -- Clojure formatter
         'ormolu', -- Haskell formatter
         'purescript-tidy', -- PureScript formatter
         'stylua', -- Used to format Lua code
@@ -735,6 +737,7 @@ require('lazy').setup({
         end
       end,
       formatters_by_ft = {
+        clojure = { 'joker' },
         lua = { 'stylua' },
         purescript = { 'purs-tidy' },
         haskell = { 'ormolu' },
